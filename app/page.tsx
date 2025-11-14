@@ -692,7 +692,7 @@ export default function Home() {
                                   innerRadius={60}
                                   fill="#8884d8"
                                   dataKey="value"
-                                  label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(1)}%`}
+                                  label={({ name, percent }) => `${name}: ${percent ? (percent * 100).toFixed(1) : '0'}%`}
                                   animationDuration={1000}
                                 >
                                   {results.freqTable.map((_: any, index: number) => (
